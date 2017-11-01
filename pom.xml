@@ -462,12 +462,12 @@
                 <configuration>
                     <rules>
                         <requireMavenVersion>
-                            <message>You are running an older version of Maven. KomptaCloud requires at least Maven
-                                3.0</message>
-                            <version>[3.0.0,)</version>
+                            <message>You are running an older version of Maven. MaintaCloud requires at least Maven
+                                3.5</message>
+                            <version>[3.5.0,)</version>
                         </requireMavenVersion>
                         <requireJavaVersion>
-                            <message>You are running an older version of Java. KomptaCloud requires at least JDK
+                            <message>You are running an older version of Java. MaintaCloud requires at least JDK
                                 ${java.version}</message>
                             <version>[${java.version}.0,)</version>
                         </requireJavaVersion>
@@ -602,7 +602,7 @@
                     <driver />
                     <url />
                     <defaultSchemaName />
-                    <username>komptaCloud</username>
+                    <username>maintaCloud</username>
                     <password />
                     <referenceUrl>hibernate:spring:com.komptacloud.domain?dialect=&amp;hibernate.ejb.naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
@@ -623,7 +623,7 @@
 
                 </dependencies>
                 <configuration>
-                    <mainClass>com.plendo.DecEmployeurCloudApp</mainClass>
+                    <mainClass>com.maintacloud.MaintaCloudApp</mainClass>
                     <!-- this added to avoid conflict with jscrambler-->
                     <executable>true</executable>
                     <fork>true</fork>

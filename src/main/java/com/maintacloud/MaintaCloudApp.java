@@ -20,8 +20,8 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @ComponentScan
-//@ComponentScan({"com.delivery.request"})
-//@EntityScan("com.delivery.domain")
+//@ComponentScan({"com.maintacloud.service"})
+//@EntityScan("com.maintacloud.domain")
 @EnableAutoConfiguration
 @EnableConfigurationProperties({MaintaCloudProperties.class, LiquibaseProperties.class})
 public class MaintaCloudApp {
