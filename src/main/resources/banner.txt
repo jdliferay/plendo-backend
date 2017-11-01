@@ -1,0 +1,15 @@
+
+
+${AnsiColor.BLUE} /$$      /$$           /$$             /$$                ${AnsiColor.GREEN}       /$$$$$$  /$$                           /$$
+${AnsiColor.BLUE}| $$$    /$$$          |__/            | $$                ${AnsiColor.GREEN}      /$$__  $$| $$                          | $$
+${AnsiColor.BLUE}| $$$$  /$$$$  /$$$$$$  /$$ /$$$$$$$  /$$$$$$    /$$$$$$   ${AnsiColor.GREEN}     | $$  \__/| $$  /$$$$$$  /$$   /$$  /$$$$$$$
+${AnsiColor.BLUE}| $$ $$/$$ $$ |____  $$| $$| $$__  $$|_  $$_/   |____  $$  ${AnsiColor.GREEN}     | $$      | $$ /$$__  $$| $$  | $$ /$$__  $$
+${AnsiColor.BLUE}| $$  $$$| $$  /$$$$$$$| $$| $$  \ $$  | $$      /$$$$$$$  ${AnsiColor.GREEN}     | $$      | $$| $$  \ $$| $$  | $$| $$  | $$
+${AnsiColor.BLUE}| $$\  $ | $$ /$$__  $$| $$| $$  | $$  | $$ /$$ /$$__  $$  ${AnsiColor.GREEN}     | $$    $$| $$| $$  | $$| $$  | $$| $$  | $$
+${AnsiColor.BLUE}| $$ \/  | $$|  $$$$$$$| $$| $$  | $$  |  $$$$/|  $$$$$$$  ${AnsiColor.GREEN}     |  $$$$$$/| $$|  $$$$$$/|  $$$$$$/|  $$$$$$$
+${AnsiColor.BLUE}|__/     |__/ \_______/|__/|__/  |__/   \___/   \_______/  ${AnsiColor.GREEN}      \______/ |__/ \______/  \______/  \_______/
+
+
+
+
+${AnsiColor.BRIGHT_BLUE}:: MaintaCloud 🤓  :: Running Spring Boot ${spring-boot.version} ::

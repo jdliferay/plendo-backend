@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <property name="smallintvar" value="SMALLINT" dbms="postgresql"/>
+    <property name="smallintvar" value="INT4" dbms="h2"/>
+
+    <changeSet author="dahech (generated)" id="1481145172644-1">
+        <createTable tableName="entreprise">
+            <column autoIncrement="true" name="entreprise_id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="entreprise_pkey"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="created_by" type="VARCHAR(255)"/>
+            <column name="updated_at" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="updated_by" type="VARCHAR(255)"/>
+            <column name="activite" type="VARCHAR(255)"/>
+            <column name="adresse" type="VARCHAR(255)"/>
+            <column name="arrondi" type="BOOLEAN"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="code_douane" type="VARCHAR(255)"/>
+            <column name="code_exploitation" type="VARCHAR(255)"/>
+            <column name="date_arrete" type="VARCHAR(255)"/>
+            <column name="date_creation" type="date"/>
+            <column name="forme_juridique" type="VARCHAR(255)"/>
+            <column name="mat_fiscale" type="VARCHAR(255)"/>
+            <column name="num_cnss" type="VARCHAR(255)"/>
+            <column name="num_cnss_gerant" type="VARCHAR(255)"/>
+            <column name="numero_registre_commerciale" type="VARCHAR(255)"/>
+            <column name="raison_sociale" type="VARCHAR(255)"/>
+            <column name="regime_horaire" type="VARCHAR(255)"/>
+            <column defaultValueBoolean="false" name="supprime" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+
+
+
+</databaseChangeLog>
