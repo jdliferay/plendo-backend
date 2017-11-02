@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
 
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
         <version>1.4.2.RELEASE</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>com.plendo</groupId>
@@ -54,8 +56,8 @@
         <metrics-spring.version>3.1.3</metrics-spring.version>
         <postgresql.version>9.4-1203-jdbc42</postgresql.version>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
+        <profile.no-liquibase/>
+        <profile.swagger/>
         <!-- Sonar properties -->
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>
         <run.addResources>false</run.addResources>
@@ -367,7 +369,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -383,7 +385,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -454,12 +456,14 @@
                     <rules>
                         <requireMavenVersion>
                             <message>You are running an older version of Maven. MaintaCloud requires at least Maven
-                                3.5</message>
+                                3.5
+                            </message>
                             <version>[3.5.0,)</version>
                         </requireMavenVersion>
                         <requireJavaVersion>
                             <message>You are running an older version of Java. MaintaCloud requires at least JDK
-                                ${java.version}</message>
+                                ${java.version}
+                            </message>
                             <version>[${java.version}.0,)</version>
                         </requireJavaVersion>
                     </rules>
@@ -589,12 +593,14 @@
                 </dependencies>
                 <configuration>
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
-                    <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                    <driver />
-                    <url />
-                    <defaultSchemaName />
+                    <diffChangeLogFile>
+                        src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml
+                    </diffChangeLogFile>
+                    <driver/>
+                    <url/>
+                    <defaultSchemaName/>
                     <username>maintaCloud</username>
-                    <password />
+                    <password/>
                     <referenceUrl>hibernate:spring:com.komptacloud.domain?dialect=&amp;hibernate.ejb.naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>
@@ -606,11 +612,11 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <dependencies>
                     <!-- https://mvnrepository.com/artifact/org.springframework/springloaded -->
-                    <dependency>
+                    <!--<dependency>
                         <groupId>org.springframework</groupId>
                         <artifactId>springloaded</artifactId>
                         <version>1.2.6.RELEASE</version>
-                    </dependency>
+                    </dependency>-->
 
                 </dependencies>
                 <configuration>
@@ -624,7 +630,7 @@
                     -->
                 </configuration>
             </plugin>
-            <!-- END COMPA + JSCRAMBLER -->
+            <!-- END Mainta + JSCRAMBLER -->
 
         </plugins>
 
